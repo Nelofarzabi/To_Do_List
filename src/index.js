@@ -30,4 +30,3 @@ const populateTasks = () => {
 };
 
 window.addEventListener('DOMContentLoaded', populateTasks);
-
