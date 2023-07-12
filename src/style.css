@@ -50,6 +50,10 @@ form input {
   width: 93%;
 }
 
+#list {
+    font-style: italic;
+}
+
 .list_container {
   display: grid;
 }

@@ -1,40 +1,46 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-<script defer src="runtime.a9d1d5ccb4ad8fc4a706.js"></script><script defer src="main.709a8dd2313b1921f886.js"></script></head>
+<script defer src="runtime.a9d1d5ccb4ad8fc4a706.js"></script><script defer src="main.f328800296f9fb5477b0.js"></script></head>
 <body>
-
-    <main class="main_section">
-        <section>
-          
-          <div id="todolist-title">
-            <h1 class="dotolist_title">Today's To Do</h1>
+    <div class="main_container">
+        <header>
+            <h1>Today's To Do</h1>
             <i class="fa-solid fa-arrows-rotate"></i>
+        </header>
+        <form action="">
+          <input type="text" name="list" id="list" placeholder="Add to your list...">
+          <i class="fa-solid fa-arrow-turn-down fa-rotate-90"></i>
+          <!-- <i class="fa-solid fa-arrow-turn-down fa-rotate-270 fa-sm"></i> -->
+        </form>
+        <ul class="list_container">
+            <!-- <li class="list_item">
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <p>wash the dishes</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </li>
+            <li class="list_item">
+              <div>
+                  <input type="checkbox" name="" id="">
+                  <p>wash the dishes</p>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+          </li>
+          <li class="list_item">
+            <div>
+                <input type="checkbox" name="" id="">
+                <p>wash the dishes</p>
             </div>
-          </div>
-          
-          <div id="todolist-input">
-            <input type="text" placeholder="Add to your list..." id="do-input">
-            <span id="add-icon" title="Add to List"></span>
-          </div>
-
-          <div class="todolist_div">
-          <ul id="do-list"></ul>
-          </div>
-          
-          <div class="bottom">
-            <a href="#" id="clear">Clear all completed.</a>
-          </div>
-        </section>
-        <p class="alertText"></p>
-      </main>
-    
-
-     </section>
-   </main>
-
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </li> -->
+        </ul>
+        <button class="clear_btn" type="button">Clear all completed</button>
+    </div>
 </body>
 </html>
