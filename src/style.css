@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main_container {
+  width: 90%;
+  background-color: #fff;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0 0 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+header h1 {
+  font-size: 1rem;
+  color: gray;
+}
+
+form {
+  width: 100%;
+  border: 1px solid rgba(168, 127, 127, 0.419);
+  border-left: none;
+  border-right: none;
+  margin-top: 1rem;
+  display: flex;
+}
+
+form input {
+  border: none;
+  padding: 15px 10px;
+  outline: none;
+  width: 93%;
+}
+
+#list {
+  font-style: italic;
+}
+
+.list_container {
+  display: grid;
+}
+
+i.fa-solid {
+  color: gray;
+  cursor: pointer;
+}
+
+.list_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.419);
+  padding: 15px 10px;
+}
+
+.list_item:last-child {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.419);
+}
+
+.list_item:first-child {
+  border-top: none;
+}
+
+.list_item button {
+  background-color: white;
+}
+
+.list_item > div {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.list_item input[type='checkbox'] {
+  cursor: pointer;
+}
+
+.list_item p {
+  font-size: 1rem;
+  color: gray;
+}
+
+.clear_btn {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.1rem;
+  border: none;
+  color: gray;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
