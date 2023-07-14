@@ -15,7 +15,7 @@ body {
   height: 100vh;
 }
 
-.main_container {
+.container {
   width: 90%;
   background-color: #fff;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
@@ -34,7 +34,7 @@ header h1 {
   color: gray;
 }
 
-form {
+.todo--form {
   width: 100%;
   border: 1px solid rgba(168, 127, 127, 0.419);
   border-left: none;
@@ -43,18 +43,14 @@ form {
   display: flex;
 }
 
-form input {
+.todo--form input {
   border: none;
   padding: 15px 10px;
   outline: none;
   width: 93%;
 }
 
-#list {
-  font-style: italic;
-}
-
-.list_container {
+.list--container {
   display: grid;
 }
 
@@ -63,42 +59,91 @@ i.fa-solid {
   cursor: pointer;
 }
 
-.list_item {
+.list--item {
   display: flex;
   justify-content: space-between;
+  gap: 0.3rem;
   align-items: center;
   border-top: 1px solid rgba(128, 128, 128, 0.419);
   padding: 15px 10px;
+  position: relative;
 }
 
-.list_item:last-child {
+.list--item:last-child {
   border-bottom: 1px solid rgba(128, 128, 128, 0.419);
 }
 
-.list_item:first-child {
+.list--item:first-child {
   border-top: none;
 }
 
-.list_item button {
+.list--item button {
   background-color: white;
 }
 
-.list_item > div {
+.list--item input[type='text'] {
+  width: 100%;
+  border: none;
+  height: 100%;
+  outline: none;
+  display: none;
+}
+
+.list--item .desc---container {
+  width: 100%;
+}
+
+.list--item .first--flex {
   display: flex;
   gap: 0.6rem;
   align-items: center;
+  width: 100%;
 }
 
-.list_item input[type='checkbox'] {
+.list--item > i {
+  cursor: all-scroll;
+}
+
+.list--item input[type='checkbox'] {
   cursor: pointer;
 }
 
-.list_item p {
+.list--item p {
   font-size: 1rem;
   color: gray;
 }
 
-.clear_btn {
+.list--item .fa-trash-can {
+  display: none;
+}
+
+.list--item.hide--desc p {
+  display: none;
+}
+
+.strike--through {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.list--item.hide--desc {
+  background-color: rgba(255, 166, 0, 0.367);
+}
+
+.list--item.hide--desc input[type='text'] {
+  display: block;
+  background-color: inherit;
+}
+
+.list--item.hide--desc .fa-trash-can {
+  display: block;
+}
+
+.list--item.hide--desc .fa-ellipsis-vertical {
+  display: none;
+}
+
+.clear--btn {
   width: 100%;
   padding: 20px;
   font-size: 1.1rem;
